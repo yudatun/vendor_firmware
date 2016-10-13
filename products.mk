@@ -8,9 +8,6 @@
 
 # boot
 PRODUCT_PACKAGES += \
-    bcm2708-rpi-b.dtb \
-    bcm2708-rpi-b-plus.dtb \
-    bcm2709-rpi-2-b.dtb \
     bootcode.bin \
     COPYING.linux \
     fixup.dat \
@@ -23,9 +20,10 @@ PRODUCT_PACKAGES += \
     start_db.elf \
     start_x.elf \
 
-
 # boot/overlays
-PRODUCT_PACKAGES += \
+PRODUCT_PACKAGES += README
+
+#PRODUCT_PACKAGES += \
     ads7846-overlay.dtb \
     bmp085_i2c-sensor-overlay.dtb \
     ds1307-rtc-overlay.dtb \
